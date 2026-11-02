@@ -1,0 +1,14 @@
+.venv/
+.venv-cpu/
+__pycache__/
+*.py[cod]
+runs/
+# Download upstream separately with setup_upstream.ps1
+CRL起步/CKA-RL/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db
