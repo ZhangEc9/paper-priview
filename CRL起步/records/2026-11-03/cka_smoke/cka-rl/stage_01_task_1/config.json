@@ -1,0 +1,43 @@
+{
+  "index": 1,
+  "task_id": 1,
+  "model_type": "cka-rl",
+  "pool_size": 2,
+  "seed": 1,
+  "profile": "mechanics_smoke",
+  "checkpoint": "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\cka-rl\\stage_01_task_1\\checkpoints\\task_1__cka-rl__run_sac__1",
+  "upstream_args": [
+    "--model-type",
+    "cka-rl",
+    "--task-id",
+    "1",
+    "--seed",
+    "1",
+    "--no-cuda",
+    "--total-timesteps",
+    "1500",
+    "--buffer-size",
+    "20000",
+    "--learning-starts",
+    "200",
+    "--random-actions-end",
+    "300",
+    "--pool-size",
+    "2",
+    "--num-evals",
+    "1",
+    "--save-dir",
+    "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\cka-rl\\stage_01_task_1\\checkpoints",
+    "--tag",
+    "tensorboard",
+    "--prev-units",
+    "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\cka-rl\\stage_00_task_0\\checkpoints\\task_0__cka-rl__run_sac__1"
+  ],
+  "eval_tasks": [
+    0,
+    1
+  ],
+  "eval_episodes": 3,
+  "cka_commit": "aa8817ace9f53120d5d205b9e4cafb3cdaa47803",
+  "metaworld_commit": "c822f28f582ba1ad49eb5dcf61016566f28003ba"
+}

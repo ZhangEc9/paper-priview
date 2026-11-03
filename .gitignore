@@ -1,5 +1,8 @@
 .venv/
 .venv-cpu/
+.venv-cka/
+.venv-cka-gpu/
+vendor/
 __pycache__/
 *.py[cod]
 runs/

@@ -1,0 +1,101 @@
+{
+  "config": {
+    "index": 0,
+    "task_id": 0,
+    "model_type": "simple",
+    "pool_size": 2,
+    "seed": 1,
+    "profile": "mechanics_smoke",
+    "checkpoint": "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\simple\\stage_00_task_0\\checkpoints\\task_0__simple__run_sac__1",
+    "upstream_args": [
+      "--model-type",
+      "simple",
+      "--task-id",
+      "0",
+      "--seed",
+      "1",
+      "--no-cuda",
+      "--total-timesteps",
+      "1500",
+      "--buffer-size",
+      "20000",
+      "--learning-starts",
+      "200",
+      "--random-actions-end",
+      "300",
+      "--pool-size",
+      "2",
+      "--num-evals",
+      "1",
+      "--save-dir",
+      "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\simple\\stage_00_task_0\\checkpoints",
+      "--tag",
+      "tensorboard"
+    ],
+    "eval_tasks": [
+      0
+    ],
+    "eval_episodes": 3,
+    "cka_commit": "aa8817ace9f53120d5d205b9e4cafb3cdaa47803",
+    "metaworld_commit": "c822f28f582ba1ad49eb5dcf61016566f28003ba"
+  },
+  "training_and_raw_eval_seconds": 52.33484660000249,
+  "source_sha256": "8aec1381f41c4c2201fef5da452d98864acea20506c22da19773faf2f5f80f5d",
+  "critic_optimizer_steps": 1299,
+  "actor_optimizer_steps": 1298,
+  "finite_parameters": true,
+  "max_parameter_change": 0.07094540446996689,
+  "alpha_parameter_changes": {},
+  "incoming_vectors": 0,
+  "stored_old_vectors": 0,
+  "merge_triggered": false,
+  "merge_events": [],
+  "frozen_parameter_changes": {},
+  "reload_max_abs_error": 0.0,
+  "evaluation_action": "tanh(mean)*action_scale+action_bias",
+  "evaluation": [
+    {
+      "task_id": 0,
+      "episode": 0,
+      "seed": 10000,
+      "return": 426.5691169058763,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 0,
+      "episode": 1,
+      "seed": 10001,
+      "return": 442.99039113473344,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 0,
+      "episode": 2,
+      "seed": 10002,
+      "return": 509.84585337077567,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    }
+  ],
+  "latest_logged_metrics": {
+    "losses/qf1_values": 13.734979629516602,
+    "losses/qf2_values": 13.755313873291016,
+    "losses/qf1_loss": 0.013125352561473846,
+    "losses/qf2_loss": 0.011773454956710339,
+    "losses/qf_loss": 0.01244940422475338,
+    "losses/actor_loss": -14.858802795410156,
+    "losses/alpha": 0.4092308282852173,
+    "charts/SPS": 31.0,
+    "losses/alpha_loss": 2.7535390853881836,
+    "charts/episodic_return": 496.4710998535156,
+    "charts/episodic_length": 500.0,
+    "charts/success": 0.0,
+    "charts/test_episodic_return": 413.9361572265625,
+    "charts/test_success": 0.0
+  }
+}

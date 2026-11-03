@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "D:\论文学习\CRL起步\cka_cpu.py", line 285, in <module>
+    main()
+  File "D:\论文学习\CRL起步\cka_cpu.py", line 266, in main
+    stage(sys.argv[2])
+  File "D:\论文学习\CRL起步\cka_cpu.py", line 138, in stage
+    exec(compile(instrumented, str(source_path), "exec"), namespace)
+  File "D:\论文学习\CRL起步\CKA-RL\experiments\meta-world\run_sac.py", line 215, in <module>
+    args = tyro.cli(Args)
+           ^^^^^^^^^^^^^^
+  File "D:\论文学习\CRL起步\.venv-cka\Lib\site-packages\tyro\_cli.py", line 187, in cli
+    output = _cli_impl(
+             ^^^^^^^^^^
+  File "D:\论文学习\CRL起步\.venv-cka\Lib\site-packages\tyro\_cli.py", line 305, in _cli_impl
+    if not _fields.is_nested_type(cast(type, f), default_instance_internal):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\论文学习\CRL起步\.venv-cka\Lib\site-packages\tyro\_unsafe_cache.py", line 33, in wrapped_f
+    out = f(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^
+  File "D:\论文学习\CRL起步\.venv-cka\Lib\site-packages\tyro\_fields.py", line 250, in is_nested_type
+    _try_field_list_from_callable(typ, default_instance),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\论文学习\CRL起步\.venv-cka\Lib\site-packages\tyro\_fields.py", line 413, in _try_field_list_from_callable
+    return field_list_from_class(cls, default_instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\论文学习\CRL起步\.venv-cka\Lib\site-packages\tyro\_fields.py", line 560, in _field_list_from_dataclass
+    for dc_field in filter(lambda field: field.init, _resolver.resolved_fields(cls)):
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\论文学习\CRL起步\.venv-cka\Lib\site-packages\tyro\_unsafe_cache.py", line 33, in wrapped_f
+    out = f(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^
+  File "D:\论文学习\CRL起步\.venv-cka\Lib\site-packages\tyro\_resolver.py", line 104, in resolved_fields
+    annotations = get_type_hints(cast(Callable, cls), include_extras=True)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\论文学习\CRL起步\.venv-cka\Lib\site-packages\typing_extensions.py", line 1605, in get_type_hints
+    hint = typing.get_type_hints(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\pythonproject\Lib\typing.py", line 2377, in get_type_hints
+    value = _eval_type(value, base_globals, base_locals)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\pythonproject\Lib\typing.py", line 395, in _eval_type
+    return t._evaluate(globalns, localns, recursive_guard)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\pythonproject\Lib\typing.py", line 905, in _evaluate
+    eval(self.__forward_code__, globalns, localns),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 1, in <module>
+NameError: name 'Literal' is not defined

@@ -1,0 +1,187 @@
+D:\论文学习\CRL起步\.venv-cka\Lib\site-packages\tyro\_parsers.py:365: UserWarning: The field `wandb-entity` is annotated with type `<class 'str'>`, but the default value `None` has type `<class 'NoneType'>`. We'll try to handle this gracefully, but it may cause unexpected behavior.
+  warnings.warn(message)
+
+*** Run name: task_2__cka-rl__run_sac__1 ***
+
+*** Device: cpu
+39
+4
+*** Loading model `cka-rl` ***
+[32m2026-11-03 17:58:09.951[0m | [34m[1mDEBUG   [0m | [36mmodels.cka_rl[0m:[36msetup_vectors[0m:[36m166[0m - [34m[1mSetup head's vectors[0m
+[32m2026-11-03 17:58:09.957[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36msetup_vectors[0m:[36m177[0m - [1mself.num_vectors:2[0m
+[32m2026-11-03 17:58:09.957[0m | [34m[1mDEBUG   [0m | [36mmodels.cka_rl[0m:[36msetup_vectors[0m:[36m179[0m - [34m[1mtorch.Size([2, 4, 256])[0m
+[32m2026-11-03 17:58:09.958[0m | [34m[1mDEBUG   [0m | [36mmodels.cka_rl[0m:[36msetup_vectors[0m:[36m180[0m - [34m[1mtorch.Size([2, 4, 256])[0m
+[32m2026-11-03 17:58:09.958[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36msetup_alpha[0m:[36m188[0m - [1malpha_init, Randn[0m
+[32m2026-11-03 17:58:09.958[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36msetup_alpha[0m:[36m189[0m - [1malpha_major, 0.6[0m
+[32m2026-11-03 17:58:09.958[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36msetup_alpha[0m:[36m202[0m - [1mTrain alpha[0m
+[32m2026-11-03 17:58:09.959[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36mlog_alpha[0m:[36m211[0m - [1mParameter containing:
+tensor([0.3307, 0.1335], requires_grad=True)[0m
+[32m2026-11-03 17:58:09.960[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36mlog_alpha[0m:[36m211[0m - [1mParameter containing:
+tensor([0.3307, 0.1335], requires_grad=True)[0m
+[32m2026-11-03 17:58:09.961[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36m__init__[0m:[36m52[0m - [1mLoading latest shared from D:\论文学习\CRL起步\runs\cka_smoke_20261103_v3\cka-rl\stage_01_task_1\checkpoints\task_1__cka-rl__run_sac__1[0m
+[32m2026-11-03 17:58:09.962[0m | [34m[1mDEBUG   [0m | [36mmodels.cka_rl[0m:[36msetup_heads[0m:[36m63[0m - [34m[1mCKA-RL fuse heads[0m
+[32m2026-11-03 17:58:09.963[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36msetup_heads[0m:[36m73[0m - [1mSet base and vectors for fc_mean[0m
+[32m2026-11-03 17:58:09.963[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36msetup_heads[0m:[36m74[0m - [1mSet base and vectors for fc_logstd[0m
+Alpha optimizer created, LR=0.001, params=2
+
+TEST: ep_ret=1179.9249419972807, success=0.0
+
+Saving trained agent in `D:\论文学习\CRL起步\runs\cka_smoke_20261103_v3\cka-rl\stage_02_task_2\checkpoints` with name `task_2__cka-rl__run_sac__1`
+[32m2026-11-03 17:59:02.408[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36msave[0m:[36m133[0m - [1msave weight as theta[0m
+[32m2026-11-03 17:59:02.409[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36msave[0m:[36m135[0m - [1mvectors' shape 3[0m
+[32m2026-11-03 17:59:02.482[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36mlog_alpha[0m:[36m211[0m - [1mNone[0m
+[32m2026-11-03 17:59:02.482[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36m__init__[0m:[36m56[0m - [1mTrain shared from scratch[0m
+[32m2026-11-03 17:59:02.483[0m | [34m[1mDEBUG   [0m | [36mmodels.cka_rl[0m:[36msetup_heads[0m:[36m63[0m - [34m[1mCKA-RL fuse heads[0m
+{
+  "config": {
+    "index": 2,
+    "task_id": 2,
+    "model_type": "cka-rl",
+    "pool_size": 2,
+    "seed": 1,
+    "profile": "mechanics_smoke",
+    "checkpoint": "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\cka-rl\\stage_02_task_2\\checkpoints\\task_2__cka-rl__run_sac__1",
+    "upstream_args": [
+      "--model-type",
+      "cka-rl",
+      "--task-id",
+      "2",
+      "--seed",
+      "1",
+      "--no-cuda",
+      "--total-timesteps",
+      "1500",
+      "--buffer-size",
+      "20000",
+      "--learning-starts",
+      "200",
+      "--random-actions-end",
+      "300",
+      "--pool-size",
+      "2",
+      "--num-evals",
+      "1",
+      "--save-dir",
+      "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\cka-rl\\stage_02_task_2\\checkpoints",
+      "--tag",
+      "tensorboard",
+      "--prev-units",
+      "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\cka-rl\\stage_00_task_0\\checkpoints\\task_0__cka-rl__run_sac__1",
+      "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\cka-rl\\stage_01_task_1\\checkpoints\\task_1__cka-rl__run_sac__1"
+    ],
+    "eval_tasks": [
+      0,
+      1,
+      2
+    ],
+    "eval_episodes": 3,
+    "cka_commit": "aa8817ace9f53120d5d205b9e4cafb3cdaa47803",
+    "metaworld_commit": "c822f28f582ba1ad49eb5dcf61016566f28003ba"
+  },
+  "training_and_raw_eval_seconds": 54.92770309999469,
+  "source_sha256": "8aec1381f41c4c2201fef5da452d98864acea20506c22da19773faf2f5f80f5d",
+  "latest_logged_metrics": {},
+  "critic_optimizer_steps": 1299,
+  "actor_optimizer_steps": 1298,
+  "finite_parameters": true,
+  "max_parameter_change": 0.048030391335487366,
+  "alpha_parameter_changes": {
+    "model.alpha": 0.004831135272979736,
+    "model.alpha_scale": 0.004522800445556641
+  },
+  "incoming_vectors": 2,
+  "stored_old_vectors": 2,
+  "merge_triggered": false,
+  "merge_events": [],
+  "frozen_parameter_changes": {
+    "model.fc_mean.weights": 0.0,
+    "model.fc_mean.biaes": 0.0,
+    "model.fc_logstd.weights": 0.0,
+    "model.fc_logstd.biaes": 0.0
+  },
+  "reload_max_abs_error": 0.0,
+  "evaluation_action": "tanh(mean)*action_scale+action_bias",
+  "evaluation": [
+    {
+      "task_id": 0,
+      "episode": 0,
+      "seed": 10000,
+      "return": 423.9575799809273,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 0,
+      "episode": 1,
+      "seed": 10001,
+      "return": 441.7784781570884,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 0,
+      "episode": 2,
+      "seed": 10002,
+      "return": 506.96845093097795,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 1,
+      "episode": 0,
+      "seed": 10000,
+      "return": 30.755241520810834,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 1,
+      "episode": 1,
+      "seed": 10001,
+      "return": 28.144278999632718,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 1,
+      "episode": 2,
+      "seed": 10002,
+      "return": 28.201437498705204,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 2,
+      "episode": 0,
+      "seed": 10000,
+      "return": 1246.829308924823,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 2,
+      "episode": 1,
+      "seed": 10001,
+      "return": 1138.8794745530893,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 2,
+      "episode": 2,
+      "seed": 10002,
+      "return": 1118.613501644868,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    }
+  ]
+}

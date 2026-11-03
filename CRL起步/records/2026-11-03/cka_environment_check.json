@@ -1,0 +1,35 @@
+{
+  "torch": "2.1.2+cpu",
+  "cuda_available": false,
+  "gymnasium": "0.29.1",
+  "mujoco": "2.3.7",
+  "tasks": [
+    {
+      "task_id": 0,
+      "obs_dim": 39,
+      "action_dim": 4,
+      "horizon": 500
+    },
+    {
+      "task_id": 1,
+      "obs_dim": 39,
+      "action_dim": 4,
+      "horizon": 500
+    },
+    {
+      "task_id": 2,
+      "obs_dim": 39,
+      "action_dim": 4,
+      "horizon": 500
+    },
+    {
+      "task_id": 3,
+      "obs_dim": 39,
+      "action_dim": 4,
+      "horizon": 500
+    }
+  ],
+  "asset_directory": "C:\\Users\\20667\\AppData\\Local\\Temp\\cka_rl_assets\\c822f28f582ba1ad49eb5dcf61016566f28003ba\\assets_v2",
+  "cka_commit": "aa8817ace9f53120d5d205b9e4cafb3cdaa47803",
+  "metaworld_commit": "c822f28f582ba1ad49eb5dcf61016566f28003ba"
+}

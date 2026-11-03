@@ -1,0 +1,106 @@
+D:\论文学习\CRL起步\.venv-cka\Lib\site-packages\tyro\_parsers.py:365: UserWarning: The field `wandb-entity` is annotated with type `<class 'str'>`, but the default value `None` has type `<class 'NoneType'>`. We'll try to handle this gracefully, but it may cause unexpected behavior.
+  warnings.warn(message)
+
+*** Run name: task_0__cka-rl__run_sac__1 ***
+
+*** Device: cpu
+39
+4
+*** Loading model `cka-rl` ***
+[32m2026-11-03 17:55:46.606[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36mlog_alpha[0m:[36m211[0m - [1mNone[0m
+[32m2026-11-03 17:55:46.606[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36m__init__[0m:[36m56[0m - [1mTrain shared from scratch[0m
+[32m2026-11-03 17:55:46.607[0m | [34m[1mDEBUG   [0m | [36mmodels.cka_rl[0m:[36msetup_heads[0m:[36m63[0m - [34m[1mCKA-RL fuse heads[0m
+
+TEST: ep_ret=413.9361569739565, success=0.0
+
+Saving trained agent in `D:\论文学习\CRL起步\runs\cka_smoke_20261103_v3\cka-rl\stage_00_task_0\checkpoints` with name `task_0__cka-rl__run_sac__1`
+[32m2026-11-03 17:56:38.009[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36msave[0m:[36m133[0m - [1msave weight as theta[0m
+[32m2026-11-03 17:56:38.010[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36msave[0m:[36m135[0m - [1mvectors' shape 1[0m
+[32m2026-11-03 17:56:38.019[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36mlog_alpha[0m:[36m211[0m - [1mNone[0m
+[32m2026-11-03 17:56:38.019[0m | [1mINFO    [0m | [36mmodels.cka_rl[0m:[36m__init__[0m:[36m56[0m - [1mTrain shared from scratch[0m
+[32m2026-11-03 17:56:38.020[0m | [34m[1mDEBUG   [0m | [36mmodels.cka_rl[0m:[36msetup_heads[0m:[36m63[0m - [34m[1mCKA-RL fuse heads[0m
+{
+  "config": {
+    "index": 0,
+    "task_id": 0,
+    "model_type": "cka-rl",
+    "pool_size": 2,
+    "seed": 1,
+    "profile": "mechanics_smoke",
+    "checkpoint": "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\cka-rl\\stage_00_task_0\\checkpoints\\task_0__cka-rl__run_sac__1",
+    "upstream_args": [
+      "--model-type",
+      "cka-rl",
+      "--task-id",
+      "0",
+      "--seed",
+      "1",
+      "--no-cuda",
+      "--total-timesteps",
+      "1500",
+      "--buffer-size",
+      "20000",
+      "--learning-starts",
+      "200",
+      "--random-actions-end",
+      "300",
+      "--pool-size",
+      "2",
+      "--num-evals",
+      "1",
+      "--save-dir",
+      "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\cka-rl\\stage_00_task_0\\checkpoints",
+      "--tag",
+      "tensorboard"
+    ],
+    "eval_tasks": [
+      0
+    ],
+    "eval_episodes": 3,
+    "cka_commit": "aa8817ace9f53120d5d205b9e4cafb3cdaa47803",
+    "metaworld_commit": "c822f28f582ba1ad49eb5dcf61016566f28003ba"
+  },
+  "training_and_raw_eval_seconds": 53.91944809998677,
+  "source_sha256": "8aec1381f41c4c2201fef5da452d98864acea20506c22da19773faf2f5f80f5d",
+  "critic_optimizer_steps": 1299,
+  "actor_optimizer_steps": 1298,
+  "finite_parameters": true,
+  "max_parameter_change": 0.07094540446996689,
+  "alpha_parameter_changes": {},
+  "incoming_vectors": 0,
+  "stored_old_vectors": 0,
+  "merge_triggered": false,
+  "merge_events": [],
+  "frozen_parameter_changes": {},
+  "reload_max_abs_error": 0.0,
+  "evaluation_action": "tanh(mean)*action_scale+action_bias",
+  "evaluation": [
+    {
+      "task_id": 0,
+      "episode": 0,
+      "seed": 10000,
+      "return": 426.5691169058763,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 0,
+      "episode": 1,
+      "seed": 10001,
+      "return": 442.99039113473344,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 0,
+      "episode": 2,
+      "seed": 10002,
+      "return": 509.84585337077567,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    }
+  ]
+}

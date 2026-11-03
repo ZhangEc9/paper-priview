@@ -1,0 +1,247 @@
+{
+  "config": {
+    "index": 3,
+    "task_id": 3,
+    "model_type": "cka-rl",
+    "pool_size": 2,
+    "seed": 1,
+    "profile": "mechanics_smoke",
+    "checkpoint": "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\cka-rl\\stage_03_task_3\\checkpoints\\task_3__cka-rl__run_sac__1",
+    "upstream_args": [
+      "--model-type",
+      "cka-rl",
+      "--task-id",
+      "3",
+      "--seed",
+      "1",
+      "--no-cuda",
+      "--total-timesteps",
+      "1500",
+      "--buffer-size",
+      "20000",
+      "--learning-starts",
+      "200",
+      "--random-actions-end",
+      "300",
+      "--pool-size",
+      "2",
+      "--num-evals",
+      "1",
+      "--save-dir",
+      "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\cka-rl\\stage_03_task_3\\checkpoints",
+      "--tag",
+      "tensorboard",
+      "--prev-units",
+      "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\cka-rl\\stage_00_task_0\\checkpoints\\task_0__cka-rl__run_sac__1",
+      "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\cka-rl\\stage_01_task_1\\checkpoints\\task_1__cka-rl__run_sac__1",
+      "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\cka-rl\\stage_02_task_2\\checkpoints\\task_2__cka-rl__run_sac__1"
+    ],
+    "eval_tasks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "eval_episodes": 3,
+    "cka_commit": "aa8817ace9f53120d5d205b9e4cafb3cdaa47803",
+    "metaworld_commit": "c822f28f582ba1ad49eb5dcf61016566f28003ba"
+  },
+  "training_and_raw_eval_seconds": 55.668659199989634,
+  "source_sha256": "8aec1381f41c4c2201fef5da452d98864acea20506c22da19773faf2f5f80f5d",
+  "latest_logged_metrics": {
+    "losses/qf1_values": 9.03017520904541,
+    "losses/qf2_values": 9.029143333435059,
+    "losses/qf1_loss": 0.011952755972743034,
+    "losses/qf2_loss": 0.012088063172996044,
+    "losses/qf_loss": 0.012020409107208252,
+    "losses/actor_loss": -10.085174560546875,
+    "losses/alpha": 0.3826735317707062,
+    "charts/SPS": 29.0,
+    "charts/alpha_learning_rate": 7.69230755395256e-05,
+    "losses/alpha_loss": 2.5750315189361572,
+    "charts/episodic_return": 7.015263080596924,
+    "charts/episodic_length": 500.0,
+    "charts/success": 0.0,
+    "charts/test_episodic_return": 4.399807929992676,
+    "charts/test_success": 0.0
+  },
+  "critic_optimizer_steps": 1299,
+  "actor_optimizer_steps": 1298,
+  "finite_parameters": true,
+  "max_parameter_change": 0.03988950699567795,
+  "alpha_parameter_changes": {
+    "model.alpha": 0.005054831504821777,
+    "model.alpha_scale": 0.005305230617523193
+  },
+  "incoming_vectors": 3,
+  "stored_old_vectors": 2,
+  "merge_triggered": true,
+  "merge_events": [
+    {
+      "head": "mean",
+      "tensor": "weight",
+      "before": 3,
+      "after": 2,
+      "pair": [
+        0,
+        1
+      ],
+      "cosine": 0.14797116816043854,
+      "mean_max_abs_error": 0.0
+    },
+    {
+      "head": "mean",
+      "tensor": "bias",
+      "before": 3,
+      "after": 2,
+      "pair": [
+        0,
+        2
+      ],
+      "cosine": 0.0,
+      "mean_max_abs_error": 0.0
+    },
+    {
+      "head": "logstd",
+      "tensor": "weight",
+      "before": 3,
+      "after": 2,
+      "pair": [
+        0,
+        1
+      ],
+      "cosine": 0.559275209903717,
+      "mean_max_abs_error": 0.0
+    },
+    {
+      "head": "logstd",
+      "tensor": "bias",
+      "before": 3,
+      "after": 2,
+      "pair": [
+        0,
+        1
+      ],
+      "cosine": 0.9980857372283936,
+      "mean_max_abs_error": 0.0
+    }
+  ],
+  "frozen_parameter_changes": {
+    "model.fc_mean.weights": 0.0,
+    "model.fc_mean.biaes": 0.0,
+    "model.fc_logstd.weights": 0.0,
+    "model.fc_logstd.biaes": 0.0
+  },
+  "reload_max_abs_error": 0.0,
+  "evaluation_action": "tanh(mean)*action_scale+action_bias",
+  "evaluation": [
+    {
+      "task_id": 0,
+      "episode": 0,
+      "seed": 10000,
+      "return": 419.8189676741609,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 0,
+      "episode": 1,
+      "seed": 10001,
+      "return": 441.2368615794054,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 0,
+      "episode": 2,
+      "seed": 10002,
+      "return": 504.9264023621697,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 1,
+      "episode": 0,
+      "seed": 10000,
+      "return": 17.69203692407042,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 1,
+      "episode": 1,
+      "seed": 10001,
+      "return": 16.93694971649406,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 1,
+      "episode": 2,
+      "seed": 10002,
+      "return": 16.313342759642985,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 2,
+      "episode": 0,
+      "seed": 10000,
+      "return": 1015.1235673793444,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 2,
+      "episode": 1,
+      "seed": 10001,
+      "return": 1119.810718011277,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 2,
+      "episode": 2,
+      "seed": 10002,
+      "return": 1078.515840721706,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 3,
+      "episode": 0,
+      "seed": 10000,
+      "return": 4.199971072324733,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 3,
+      "episode": 1,
+      "seed": 10001,
+      "return": 4.939851842038736,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 3,
+      "episode": 2,
+      "seed": 10002,
+      "return": 4.891523518392702,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    }
+  ]
+}

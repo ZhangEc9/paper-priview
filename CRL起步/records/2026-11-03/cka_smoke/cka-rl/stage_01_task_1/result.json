@@ -1,0 +1,140 @@
+{
+  "config": {
+    "index": 1,
+    "task_id": 1,
+    "model_type": "cka-rl",
+    "pool_size": 2,
+    "seed": 1,
+    "profile": "mechanics_smoke",
+    "checkpoint": "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\cka-rl\\stage_01_task_1\\checkpoints\\task_1__cka-rl__run_sac__1",
+    "upstream_args": [
+      "--model-type",
+      "cka-rl",
+      "--task-id",
+      "1",
+      "--seed",
+      "1",
+      "--no-cuda",
+      "--total-timesteps",
+      "1500",
+      "--buffer-size",
+      "20000",
+      "--learning-starts",
+      "200",
+      "--random-actions-end",
+      "300",
+      "--pool-size",
+      "2",
+      "--num-evals",
+      "1",
+      "--save-dir",
+      "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\cka-rl\\stage_01_task_1\\checkpoints",
+      "--tag",
+      "tensorboard",
+      "--prev-units",
+      "D:\\论文学习\\CRL起步\\runs\\cka_smoke_20261103_v3\\cka-rl\\stage_00_task_0\\checkpoints\\task_0__cka-rl__run_sac__1"
+    ],
+    "eval_tasks": [
+      0,
+      1
+    ],
+    "eval_episodes": 3,
+    "cka_commit": "aa8817ace9f53120d5d205b9e4cafb3cdaa47803",
+    "metaworld_commit": "c822f28f582ba1ad49eb5dcf61016566f28003ba"
+  },
+  "training_and_raw_eval_seconds": 55.90164179999556,
+  "source_sha256": "8aec1381f41c4c2201fef5da452d98864acea20506c22da19773faf2f5f80f5d",
+  "critic_optimizer_steps": 1299,
+  "actor_optimizer_steps": 1298,
+  "finite_parameters": true,
+  "max_parameter_change": 0.12967219948768616,
+  "alpha_parameter_changes": {
+    "model.alpha": 0.0,
+    "model.alpha_scale": 0.0
+  },
+  "incoming_vectors": 1,
+  "stored_old_vectors": 1,
+  "merge_triggered": false,
+  "merge_events": [],
+  "frozen_parameter_changes": {
+    "model.fc_mean.weights": 0.0,
+    "model.fc_mean.biaes": 0.0,
+    "model.fc_logstd.weights": 0.0,
+    "model.fc_logstd.biaes": 0.0
+  },
+  "reload_max_abs_error": 0.0,
+  "evaluation_action": "tanh(mean)*action_scale+action_bias",
+  "evaluation": [
+    {
+      "task_id": 0,
+      "episode": 0,
+      "seed": 10000,
+      "return": 420.3675012255232,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 0,
+      "episode": 1,
+      "seed": 10001,
+      "return": 443.14222011510225,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 0,
+      "episode": 2,
+      "seed": 10002,
+      "return": 506.87809078302683,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 1,
+      "episode": 0,
+      "seed": 10000,
+      "return": 17.563344826516733,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 1,
+      "episode": 1,
+      "seed": 10001,
+      "return": 17.044598252055362,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    },
+    {
+      "task_id": 1,
+      "episode": 2,
+      "seed": 10002,
+      "return": 15.80534143988787,
+      "success_final": 0.0,
+      "success_any": 0.0,
+      "steps": 500
+    }
+  ],
+  "latest_logged_metrics": {
+    "losses/qf1_values": 8.5111083984375,
+    "losses/qf2_values": 8.522574424743652,
+    "losses/qf1_loss": 0.007869385182857513,
+    "losses/qf2_loss": 0.008029172196984291,
+    "losses/qf_loss": 0.007949278689920902,
+    "losses/actor_loss": -9.527863502502441,
+    "losses/alpha": 0.3801470398902893,
+    "charts/SPS": 29.0,
+    "charts/alpha_learning_rate": 7.69230755395256e-05,
+    "losses/alpha_loss": 2.5719804763793945,
+    "charts/episodic_return": 39.18342590332031,
+    "charts/episodic_length": 500.0,
+    "charts/success": 0.0,
+    "charts/test_episodic_return": 13.975565910339355,
+    "charts/test_success": 0.0
+  }
+}

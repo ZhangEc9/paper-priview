@@ -1,0 +1,31 @@
+D:\论文学习\CRL起步\.venv-cka\Lib\site-packages\tyro\_fields.py:334: UserWarning: The field wandb_entity is annotated with type <class 'str'>, but the default value None has type <class 'NoneType'>. We'll try to handle this gracefully, but it may cause unexpected behavior.
+  warnings.warn(
+Traceback (most recent call last):
+  File "D:\论文学习\CRL起步\cka_cpu.py", line 291, in <module>
+    main()
+  File "D:\论文学习\CRL起步\cka_cpu.py", line 272, in main
+    stage(sys.argv[2])
+  File "D:\论文学习\CRL起步\cka_cpu.py", line 143, in stage
+    exec(compile(instrumented, str(source_path), "exec", dont_inherit=True), namespace)
+  File "D:\论文学习\CRL起步\CKA-RL\experiments\meta-world\run_sac.py", line 215, in <module>
+    args = tyro.cli(Args)
+           ^^^^^^^^^^^^^^
+  File "D:\论文学习\CRL起步\.venv-cka\Lib\site-packages\tyro\_cli.py", line 187, in cli
+    output = _cli_impl(
+             ^^^^^^^^^^
+  File "D:\论文学习\CRL起步\.venv-cka\Lib\site-packages\tyro\_cli.py", line 443, in _cli_impl
+    namespace = parser.parse_args(args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\pythonproject\Lib\argparse.py", line 1874, in parse_args
+    args, argv = self.parse_known_args(args, namespace)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\pythonproject\Lib\argparse.py", line 1907, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\论文学习\CRL起步\.venv-cka\Lib\site-packages\tyro\_argparse_formatter.py", line 492, in _parse_known_args
+    start_index = consume_optional(start_index)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\论文学习\CRL起步\.venv-cka\Lib\site-packages\tyro\_argparse_formatter.py", line 359, in consume_optional
+    action, option_string, explicit_arg = option_tuple
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)

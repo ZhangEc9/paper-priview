@@ -1,0 +1,15 @@
+# Install torch separately from https://download.pytorch.org/whl/cpu
+torch==2.1.2
+numpy==1.26.3
+gymnasium==0.29.1
+mujoco==2.3.7
+stable-baselines3==2.2.1
+# CLI-only compatibility update: tyro 0.6.3 fails on Python 3.11.15 argparse.
+tyro==1.0.16
+tensorboard==2.15.1
+scipy==1.11.4
+matplotlib==3.8.2
+imageio==2.33.1
+loguru==0.7.3
+tqdm==4.70.1
+# Install vendor/Metaworld pinned at c822f28f582ba1ad49eb5dcf61016566f28003ba

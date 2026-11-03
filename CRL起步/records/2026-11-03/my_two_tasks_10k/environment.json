@@ -1,0 +1,28 @@
+{
+  "kind": "two_task_CPU_learning_exercise_not_CKA_RL",
+  "arguments": {
+    "name": "my_two_tasks_10k",
+    "steps": 10000,
+    "seed": 42,
+    "gravity_a": 10.0,
+    "gravity_b": 5.0,
+    "eval_every": 2000,
+    "eval_episodes": 10
+  },
+  "python": "3.11.15 | packaged by conda-forge | (main, Mar  5 2026, 16:36:00) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "versions": {
+    "torch": "2.7.1+cpu",
+    "gymnasium": "1.2.3",
+    "stable-baselines3": "2.7.1"
+  },
+  "device": "cpu",
+  "threads": 1,
+  "task_gravities": {
+    "A": 10.0,
+    "B": 5.0
+  },
+  "protocol": "Same reward/observation/action; change gravity. No task ID in policy input.",
+  "B_switch": "Keep actor, critic, target networks, optimizers and entropy state; clear replay buffer; restart 500-step random warm-up.",
+  "evaluation": "3 fixed development episodes; separate fixed held-out episodes; no tuning or early stopping"
+}
